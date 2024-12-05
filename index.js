@@ -5,13 +5,13 @@ const cors = require("cors");
 
 app.use(express.json());
 
-app.use(cors({
-    origin: "https://dotcompreview.com/react", 
-    methods: ["GET", "POST"], 
-    credentials: true 
-  }));
+// app.use(cors({
+//     origin: "https://dotcompreview.com/react", 
+//     methods: ["GET", "POST"], 
+//     credentials: true 
+//   }));
 
-// app.use(cors());
+app.use(cors());
 
 app.use('/api/contact', require('./routes/contact'));
 
